@@ -1,0 +1,11 @@
+name: 'postgres runner'
+description: 'postgres runner'
+inputs:
+  version:
+    description: ''
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.version }}

@@ -11,6 +11,8 @@ import (
 	"strings"
 )
 
+
+
 var typeByteSlice = reflect.TypeOf([]byte{})
 var typeDriverValuer = reflect.TypeOf((*driver.Valuer)(nil)).Elem()
 var typeSQLScanner = reflect.TypeOf((*sql.Scanner)(nil)).Elem()
